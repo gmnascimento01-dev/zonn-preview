@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Piso Elevado em São Paulo: Instalação, Manutenção e Restauração | ZONN</title>
+<meta name="description" content="Instalação, manutenção e restauração de piso elevado em São Paulo e Grande SP para escritórios e data centers. Visita técnica e proposta por escrito.">
+<meta name="theme-color" content="#1B1C1E">
+<meta property="og:title" content="ZONN Pisos Elevados · São Paulo">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Barlow:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Cloudflare Web Analytics: ativado pelo painel do Cloudflare Pages (Web Analytics → Enable). Não colar script manualmente. -->
+<script src="tracking.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"ZONN Pisos Elevados","areaServed":"São Paulo e Grande São Paulo","url":"https://zonn.com.br"}</script>
+<style>
+html{scroll-padding-top:72px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:#F7F6F3;color:#1B1C1E;font-family:"Barlow",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#8A6100}
+a:hover{color:#1B1C1E}
+:focus-visible{outline:3px solid #F2B01E;outline-offset:3px}
+dialog::backdrop{background:rgba(18,19,20,.82)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</helmet>
+
+<a href="#conteudo" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#F2B01E;color:#1B1C1E;padding:12px 16px;border-radius:4px;font-weight:600;text-decoration:none" style-focus="left:16px">Pular para o conteúdo</a>
+
+<div aria-hidden="true" style="height:68px"></div>
+<header data-screen-label="Header" style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(27,28,30,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #3A3C40;transition:height 250ms cubic-bezier(.2,.7,.2,1);height:{{ headerH }}">
+  <div style="max-width:1240px;height:100%;margin:0 auto;padding:0 clamp(16px,4vw,80px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#topo" aria-label="ZONN Pisos Elevados, início" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#F3F2EE">
+      <span style="width:22px;height:22px;background:#F2B01E;border-radius:2px;box-shadow:inset 0 0 0 5px #1B1C1E, 0 0 0 1px #F2B01E"></span>
+      <span style="font-family:Archivo,sans-serif;font-weight:800;font-size:22px;letter-spacing:.02em">ZONN</span>
+      <sc-if value="{{ showTag }}" hint-placeholder-val="{{ true }}"><span style="font-size:12px;color:#B4B5B8;letter-spacing:.12em;text-transform:uppercase;font-weight:600">Pisos Elevados</span></sc-if>
+    </a>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Principal" style="display:flex;align-items:center;gap:clamp(18px,2vw,32px)">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+          <a href="{{ n.href }}" style="color:#B4B5B8;font-size:15px;font-weight:500;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:2px;text-underline-offset:8px;transition:color 250ms, text-decoration-color 250ms" style-hover="color:#F3F2EE;text-decoration-color:#F2B01E">{{ n.label }}</a>
+        </sc-for>
+        <a href="#orcamento" style="display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;background:#F2B01E;color:#1B1C1E;border-radius:4px;font-weight:600;font-size:15px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms,box-shadow 250ms" style-hover="background:#FFC23D;transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25);color:#1B1C1E">Pedir orçamento</a>
+      </nav>
+    </sc-if>
+    <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ toggleMenu }}" aria-expanded="{{ menu }}" aria-label="Abrir menu" style="width:48px;height:48px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;background:transparent;border:1px solid #3A3C40;border-radius:4px;cursor:pointer">
+        <span style="width:22px;height:2px;background:#F3F2EE"></span><span style="width:22px;height:2px;background:#F3F2EE"></span><span style="width:14px;height:2px;background:#F2B01E;align-self:center;margin-left:8px"></span>
+      </button>
+    </sc-if>
+  </div>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-label="Menu" style="position:fixed;inset:0;z-index:60;background:#1B1C1E;display:flex;flex-direction:column;padding:24px clamp(16px,4vw,80px)">
+    <div style="display:flex;justify-content:space-between;align-items:center;height:48px">
+      <span style="font-family:Archivo,sans-serif;font-weight:800;font-size:22px;color:#F3F2EE">ZONN</span>
+      <button onClick="{{ closeMenu }}" aria-label="Fechar menu" style="width:48px;height:48px;background:transparent;border:1px solid #3A3C40;border-radius:4px;color:#F3F2EE;font-size:26px;cursor:pointer">×</button>
+    </div>
+    <nav aria-label="Menu móvel" style="display:flex;flex-direction:column;gap:4px;margin-top:40px">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+        <a href="{{ n.href }}" onClick="{{ closeMenu }}" style="font-family:Archivo,sans-serif;font-weight:700;font-size:24px;color:#F3F2EE;text-decoration:none;padding:14px 0;border-bottom:1px solid #3A3C40">{{ n.label }}</a>
+      </sc-for>
+    </nav>
+    <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="header" style="margin-top:auto;display:flex;justify-content:center;align-items:center;min-height:52px;background:#F2B01E;color:#1B1C1E;border-radius:4px;font-weight:600;text-decoration:none">Pedir orçamento no WhatsApp</a>
+  </div>
+</sc-if>
+
+<main id="conteudo">
+
+<section id="topo" data-screen-label="Hero" style="position:relative;overflow:hidden;background:#1B1C1E;color:#F3F2EE">
+  <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}">
+    <div aria-hidden="true" style="position:absolute;inset:-48px;background:linear-gradient(#3A3C40 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,#3A3C40 1px,transparent 1px) 0 0/48px 48px;opacity:.55;transform:translateY({{ parallax }})"></div>
+  </sc-if>
+  <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(27,28,30,.94) 0%,rgba(27,28,30,.82) 55%,rgba(27,28,30,.70) 100%)"></div>
+  <div style="position:relative;max-width:1240px;margin:0 auto;padding:clamp(56px,3rem + 4vw,112px) clamp(16px,4vw,80px) clamp(64px,3rem + 4vw,120px);display:flex;flex-wrap:wrap;gap:clamp(40px,5vw,72px);align-items:center">
+    <div style="flex:7 1 520px;min-width:0">
+      <p data-reveal="" data-delay="0" style="margin:0 0 24px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F2B01E"><span style="flex:none;width:24px;height:2px;background:#F2B01E"></span>Piso elevado · Vinílico · Carpete corporativo — São Paulo e região</p>
+      <h1 data-reveal="" data-delay="100" style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(2.2rem,1.1rem + 4.6vw,4.6rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Piso firme, nivelado e sem ruído, sem parar a sua operação.</h1>
+      <p data-reveal="" data-delay="200" style="margin:28px 0 0;max-width:58ch;font-size:clamp(1.1rem,1rem + .4vw,1.25rem);line-height:1.6;color:#B4B5B8;text-wrap:pretty">Instalação, manutenção e restauração de piso elevado para escritórios, data centers e salas técnicas. Visita técnica com diagnóstico e proposta por escrito.</p>
+      <div data-reveal="" data-delay="300" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:12px">
+        <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="hero" style="flex:1 1 260px;max-width:340px;display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:52px;padding:14px 24px;background:#F2B01E;color:#1B1C1E;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms,box-shadow 250ms" style-hover="background:#FFC23D;transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25);color:#1B1C1E" style-active="background:#D99A0B;transform:translateY(0);box-shadow:none">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+          Pedir orçamento no WhatsApp
+        </a>
+        <a href="#orcamento" style="flex:1 1 220px;max-width:280px;display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:14px 24px;border:2px solid #F3F2EE;color:#F3F2EE;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms" style-hover="background:rgba(243,242,238,.08);transform:translateY(-2px);color:#F3F2EE">Enviar fotos do piso</a>
+      </div>
+      <ul data-reveal="" data-delay="400" style="list-style:none;margin:48px 0 0;padding:24px 0 0;border-top:1px solid #3A3C40;display:flex;flex-wrap:wrap;gap:16px 32px">
+        <sc-for list="{{ selos }}" as="s" hint-placeholder-count="3">
+          <li style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:#F3F2EE">
+            <span style="flex:none;width:18px;height:18px;border:1.75px solid #F2B01E;border-radius:2px;display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;background:#F2B01E"></span></span>{{ s }}
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+    <div data-reveal="" data-delay="200" style="flex:5 1 320px;min-width:0;max-width:480px;margin:0 auto;position:relative">
+      <div aria-hidden="true" style="position:absolute;inset:0;transform:translate(16px,16px);border:2px solid #F2B01E;border-radius:4px"></div>
+      <img src="assets/hero-obra.jpg" width="960" height="1200" fetchpriority="high" decoding="async" alt="Hall de elevadores de edifício corporativo com piso elevado em granito preto polido ao centro e granito claro nas laterais" style="position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:4px;background:#26282B;box-shadow:0 6px 0 rgba(0,0,0,.25),0 40px 80px rgba(0,0,0,.15)">
+    </div>
+  </div>
+</section>
+
+<section id="produtos" data-screen-label="Produtos" style="background:#F7F6F3;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Linha de produtos</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 48px">
+      <div style="flex:1 1 480px;min-width:0">
+        <h2 data-reveal="" style="margin:0;max-width:20ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Pisos elevados para cada ambiente</h2>
+        <p data-reveal="" style="margin:20px 0 0;max-width:62ch;font-size:clamp(1.1rem,1rem + .4vw,1.25rem);line-height:1.6;color:#55575B;text-wrap:pretty">Instalamos, mantemos e restauramos os principais tipos de piso elevado do mercado. Veja as opções e peça um orçamento para o seu espaço.</p>
+      </div>
+    </div>
+    <div role="group" aria-label="Filtrar produtos" style="margin-top:32px;display:flex;flex-wrap:wrap;gap:8px">
+      <sc-for list="{{ pchips }}" as="c" hint-placeholder-count="4">
+        <button type="button" onClick="{{ c.on }}" aria-pressed="{{ c.active }}" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }};font-family:Barlow,sans-serif;font-size:15px;font-weight:600;white-space:nowrap;cursor:pointer;transition:border-color 150ms" style-hover="border-color:#1B1C1E">{{ c.label }}</button>
+      </sc-for>
+    </div>
+    <div style="margin-top:32px;display:grid;grid-template-columns:repeat({{ pcols }},minmax(0,1fr));gap:24px">
+      <sc-for list="{{ produtosList }}" as="p" hint-placeholder-count="6">
+        <article onMouseEnter="{{ p.enter }}" onMouseLeave="{{ p.leave }}" style="min-width:0;background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;box-shadow:{{ p.shadow }};transition:box-shadow 250ms cubic-bezier(.2,.7,.2,1)">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#F7F6F3;border-bottom:1px solid #D3D1CB">
+            <sc-if value="{{ p.hasFoto }}" hint-placeholder-val="{{ false }}">
+              <img src="{{ p.foto }}" alt="{{ p.alt }}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;transform:{{ p.zoom }};transition:transform 600ms cubic-bezier(.2,.7,.2,1)">
+            </sc-if>
+            <sc-if value="{{ p.noFoto }}" hint-placeholder-val="{{ true }}">
+              <div role="img" aria-label="{{ p.alt }}" style="width:100%;height:100%;position:relative;background:linear-gradient(#E4E2DD 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,#E4E2DD 1px,transparent 1px) 0 0/24px 24px,#F7F6F3;display:flex;flex-direction:column;justify-content:space-between;padding:20px;transform:{{ p.zoom }};transition:transform 600ms cubic-bezier(.2,.7,.2,1)">
+                <span style="align-self:flex-start;font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.06em;color:#55575B;background:#F7F6F3;padding:2px 6px">FOTO · {{ p.material }} · 4:3</span>
+                <span style="font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(2rem,1.4rem + 2vw,2.8rem);letter-spacing:-0.02em;line-height:1;color:#1B1C1E;opacity:.14">{{ p.material }}</span>
+              </div>
+            </sc-if>
+          </div>
+          <div style="padding:24px;display:flex;flex-direction:column;gap:12px;flex:1">
+            <span style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100">Piso elevado</span>
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);line-height:1.2">{{ p.nome }}</h3>
+            <p style="margin:0;color:#55575B;font-size:16px;line-height:1.5">{{ p.aplicacao }}</p>
+            <ul style="list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ p.chips }}" as="t" hint-placeholder-count="2">
+                <li style="font-size:13px;font-weight:600;color:#1B1C1E;background:#ECEBE7;border:1px solid #D3D1CB;border-radius:4px;padding:4px 10px">{{ t }}</li>
+              </sc-for>
+            </ul>
+            <button type="button" onClick="{{ p.open }}" aria-haspopup="dialog" style="margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 0 0;background:transparent;border:0;font:600 16px Barlow,sans-serif;color:#8A6100;cursor:pointer;transition:gap 250ms" style-hover="gap:14px;color:#1B1C1E">Ver ficha técnica <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<dialog ref="{{ dlgRef }}" onClick="{{ dlgBackdrop }}" aria-labelledby="ficha-titulo" style="padding:0;border:0;border-radius:{{ dlgR }};width:{{ dlgW }};max-width:{{ dlgW }};height:{{ dlgH }};max-height:{{ dlgMaxH }};margin:auto;background:#FFFFFF;color:#1B1C1E;box-shadow:0 40px 80px rgba(0,0,0,.15);overflow:auto;overscroll-behavior:contain">
+  <div style="position:sticky;top:0;z-index:1;background:#FFFFFF;border-bottom:1px solid #D3D1CB;padding:20px clamp(20px,4vw,40px);display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+    <div style="min-width:0">
+      <span style="display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100">Ficha técnica</span>
+      <h2 id="ficha-titulo" style="margin:6px 0 0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.5rem,1.1rem + 1.6vw,2.2rem);line-height:1.1;letter-spacing:-0.02em">{{ fp.nome }}</h2>
+    </div>
+    <button type="button" onClick="{{ closeFicha }}" aria-label="Fechar ficha técnica" style="flex:none;width:44px;height:44px;background:transparent;border:1px solid #D3D1CB;border-radius:4px;font-size:24px;line-height:1;color:#1B1C1E;cursor:pointer" style-hover="border-color:#1B1C1E">×</button>
+  </div>
+  <div style="padding:28px clamp(20px,4vw,40px) 36px;display:flex;flex-direction:column;gap:28px">
+    <p style="margin:0;font-size:17px;line-height:1.6;color:#55575B;max-width:62ch">{{ fp.descricao }}</p>
+    <div>
+      <h3 style="margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1B1C1E">Indicado para</h3>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+        <sc-for list="{{ fp.indicado }}" as="i" hint-placeholder-count="4">
+          <li style="font-size:14px;font-weight:600;padding:6px 14px;border-radius:999px;border:1px solid #D3D1CB;background:#F7F6F3">{{ i }}</li>
+        </sc-for>
+      </ul>
+    </div>
+    <div>
+      <h3 style="margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase">Especificações</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:16px">
+        <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Especificações do {{ fp.nomeFull }}</caption>
+        <tbody>
+          <sc-for list="{{ fp.specs }}" as="r" hint-placeholder-count="3">
+            <tr style="border-top:1px solid #D3D1CB">
+              <th scope="row" style="text-align:left;vertical-align:top;padding:12px 16px 12px 0;width:38%;font-weight:600;color:#1B1C1E">{{ r.k }}</th>
+              <td style="padding:12px 0;color:#55575B;line-height:1.5">{{ r.v }}</td>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+    </div>
+    <sc-if value="{{ fp.hasModelos }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <h3 style="margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase">Modelos e cargas</h3>
+        <div role="region" aria-label="Tabela de modelos e cargas, role horizontalmente" tabindex="0" style="overflow-x:auto;border:1px solid #D3D1CB;border-radius:4px">
+          <table style="width:100%;min-width:640px;border-collapse:collapse;font-size:15px">
+            <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Modelos e cargas do Piso Elevado Metálico</caption>
+            <thead>
+              <tr style="background:#1B1C1E;color:#F3F2EE">
+                <sc-for list="{{ modeloCols }}" as="h" hint-placeholder-count="6">
+                  <th scope="col" style="text-align:left;padding:12px 14px;font-weight:600;font-size:13px;line-height:1.3;vertical-align:bottom">{{ h }}</th>
+                </sc-for>
+              </tr>
+            </thead>
+            <tbody>
+              <sc-for list="{{ fp.modelos }}" as="m" hint-placeholder-count="7">
+                <tr style="border-top:1px solid #D3D1CB;background:{{ m.bg }}">
+                  <th scope="row" style="text-align:left;padding:10px 14px;font-family:Archivo,sans-serif;font-weight:700;white-space:nowrap">{{ m.modelo }}</th>
+                  <td style="padding:10px 14px;color:#55575B;white-space:nowrap">{{ m.montagem }}</td>
+                  <td style="padding:10px 14px;color:#55575B;white-space:nowrap">{{ m.aplicacao }}</td>
+                  <td style="padding:10px 14px;font-variant-numeric:tabular-nums">{{ m.projeto }}</td>
+                  <td style="padding:10px 14px;font-variant-numeric:tabular-nums">{{ m.ruptura }}</td>
+                  <td style="padding:10px 14px;font-variant-numeric:tabular-nums">{{ m.seguranca }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase">Acabamentos</h3>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:8px">
+          <sc-for list="{{ fp.acabamentos }}" as="a" hint-placeholder-count="3">
+            <li style="display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid #D3D1CB;border-radius:4px;font-weight:600;font-size:15px"><span aria-hidden="true" style="flex:none;width:8px;height:8px;background:#D99A0B"></span>{{ a }}</li>
+          </sc-for>
+        </ul>
+      </div>
+    </sc-if>
+    <p style="margin:0;font-size:14px;color:#55575B">Valores de referência. A especificação final é confirmada na visita técnica.</p>
+    <a href="{{ fp.wa }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="{{ fp.origem }}" data-produto="{{ fp.msgNome }}" style="align-self:flex-start;display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:52px;padding:14px 24px;background:#F2B01E;color:#1B1C1E;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms,box-shadow 250ms" style-hover="background:#FFC23D;transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25);color:#1B1C1E" style-active="background:#D99A0B;transform:translateY(0);box-shadow:none">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+      Pedir orçamento deste piso
+    </a>
+  </div>
+</dialog>
+
+<section id="revestimentos" data-screen-label="Revestimentos" style="background:#ECEBE7;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Revestimentos</p>
+    <h2 data-reveal="" style="margin:0;max-width:22ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Vinílico e carpete instalados sobre o piso elevado.</h2>
+    <p data-reveal="" style="margin:20px 0 0;max-width:62ch;font-size:clamp(1.1rem,1rem + .4vw,1.25rem);line-height:1.6;color:#55575B;text-wrap:pretty">O revestimento certo mantém o acesso ao cabeamento sem descolar o acabamento a cada manutenção. Instalamos carpete e vinílico em placa, régua ou manta, com a fixação adequada a cada caso.</p>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px">
+      <sc-for list="{{ revs }}" as="r" hint-placeholder-count="2">
+        <article data-reveal="" data-delay="{{ r.delay }}" style="min-width:0;background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px;overflow:hidden;display:flex;flex-direction:column">
+          <sc-if value="{{ r.hasImg }}" hint-placeholder-val="{{ false }}">
+            <img src="{{ r.img }}" alt="{{ r.alt }}" width="1120" height="490" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;background:#ECEBE7;border-bottom:1px solid #D3D1CB">
+          </sc-if>
+          <sc-if value="{{ r.noImg }}" hint-placeholder-val="{{ true }}">
+            <div role="img" aria-label="{{ r.alt }}" style="aspect-ratio:16/7;background:repeating-linear-gradient(135deg,#E4E2DD 0 12px,#ECEBE7 12px 24px);border-bottom:1px solid #D3D1CB;display:flex;align-items:flex-end;padding:16px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#55575B;background:#F7F6F3;padding:2px 6px">{{ r.foto }}</span></div>
+          </sc-if>
+          <div style="padding:28px 24px;display:flex;flex-direction:column;gap:16px;flex:1">
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);line-height:1.2">{{ r.t }}</h3>
+            <p style="margin:0;color:#55575B;font-size:16px;line-height:1.6">{{ r.d }}</p>
+            <dl style="margin:0;display:flex;flex-direction:column">
+              <sc-for list="{{ r.formatos }}" as="f" hint-placeholder-count="3">
+                <div style="display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid #D3D1CB">
+                  <dt style="font-weight:600;font-size:15px;color:#1B1C1E">{{ f.k }}</dt>
+                  <dd style="margin:0;font-size:15px;line-height:1.5;color:#55575B">{{ f.v }}</dd>
+                </div>
+              </sc-for>
+            </dl>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+    <div data-reveal="" style="margin-top:56px">
+      <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem)">Qual revestimento escolher</h3>
+      <div role="region" aria-label="Comparativo de revestimentos, role horizontalmente" tabindex="0" style="overflow-x:auto;background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px">
+        <table style="width:100%;min-width:720px;border-collapse:collapse;font-size:15px">
+          <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Comparativo de revestimentos para piso elevado</caption>
+          <thead>
+            <tr style="background:#1B1C1E;color:#F3F2EE">
+              <th scope="col" style="text-align:left;padding:14px 16px;font-weight:600;font-size:13px">Revestimento</th>
+              <th scope="col" style="text-align:left;padding:14px 16px;font-weight:600;font-size:13px">Fixação</th>
+              <th scope="col" style="text-align:left;padding:14px 16px;font-weight:600;font-size:13px">Acesso ao cabeamento</th>
+              <th scope="col" style="text-align:left;padding:14px 16px;font-weight:600;font-size:13px">Onde usar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ revTabela }}" as="t" hint-placeholder-count="5">
+              <tr style="border-top:1px solid #D3D1CB;background:{{ t.bg }}">
+                <th scope="row" style="text-align:left;padding:12px 16px;font-family:Archivo,sans-serif;font-weight:700;white-space:nowrap">{{ t.n }}</th>
+                <td style="padding:12px 16px;color:#55575B">{{ t.fix }}</td>
+                <td style="padding:12px 16px;color:#1B1C1E;font-weight:500">{{ t.acesso }}</td>
+                <td style="padding:12px 16px;color:#55575B">{{ t.uso }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div data-reveal="" style="margin-top:56px">
+      <h3 style="margin:0 0 20px;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem)">Como instalamos</h3>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px">
+        <sc-for list="{{ revEtapas }}" as="e" hint-placeholder-count="5">
+          <li style="background:#F7F6F3;border:1px solid #D3D1CB;border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:10px">
+            <span style="font-family:Archivo,sans-serif;font-weight:800;font-size:20px;color:#8A6100">{{ e.n }}</span>
+            <strong style="font-family:Archivo,sans-serif;font-weight:700;font-size:17px;line-height:1.25">{{ e.t }}</strong>
+            <span style="font-size:15px;line-height:1.5;color:#55575B">{{ e.d }}</span>
+          </li>
+        </sc-for>
+      </ol>
+    </div>
+    <div data-reveal="" style="margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding-top:32px;border-top:1px solid #D3D1CB">
+      <p style="margin:0;max-width:52ch;font-size:17px;line-height:1.6;color:#55575B">Já tem o piso elevado e só precisa trocar o acabamento? A troca pode ser feita por setores, sem desmontar a estrutura.</p>
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="revestimentos" style="display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:14px 24px;border:2px solid #1B1C1E;color:#1B1C1E;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms" style-hover="background:rgba(27,28,30,.05);transform:translateY(-2px);color:#1B1C1E">Orçar revestimento</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" data-screen-label="Serviços" style="background:#F7F6F3;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Serviços</p>
+    <h2 data-reveal="" style="margin:0;max-width:22ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Do diagnóstico à entrega, com a mesma equipe.</h2>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:24px">
+      <sc-for list="{{ servicos }}" as="s" hint-placeholder-count="3">
+        <article data-reveal="" data-delay="{{ s.delay }}" style="background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow 250ms" style-hover="box-shadow:0 12px 28px rgba(27,28,30,.12)">
+          <div style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid #D3D1CB">
+            <sc-if value="{{ s.hasImg }}" hint-placeholder-val="{{ false }}"><img src="{{ s.img }}" alt="{{ s.alt }}" width="1200" height="900" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;transition:transform 600ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></sc-if>
+            <sc-if value="{{ s.noImg }}" hint-placeholder-val="{{ true }}"><div role="img" aria-label="{{ s.alt }}" style="width:100%;height:100%;background:repeating-linear-gradient(135deg,#E4E2DD 0 12px,#ECEBE7 12px 24px);display:flex;align-items:flex-end;padding:16px;transition:transform 600ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#55575B">{{ s.foto }}</span></div></sc-if>
+          </div>
+          <div style="padding:28px 24px;display:flex;flex-direction:column;gap:16px;flex:1">
+            <span style="font-family:Archivo,sans-serif;font-weight:800;font-size:28px;color:#1B1C1E;opacity:.6;line-height:1">{{ s.n }}</span>
+            <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);line-height:1.2">{{ s.t }}</h3>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+              <sc-for list="{{ s.itens }}" as="i" hint-placeholder-count="3">
+                <li style="display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.5;color:#55575B">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D99A0B" stroke-width="3" aria-hidden="true" style="flex:none;margin-top:3px"><path d="M4 12l5 5L20 6"></path></svg>{{ i }}
+                </li>
+              </sc-for>
+            </ul>
+            <a href="#orcamento" style="margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;color:#8A6100;text-decoration:none;transition:gap 250ms" style-hover="gap:14px;color:#1B1C1E">Solicitar orçamento <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+    <div data-reveal="" style="margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:20px 24px;border:1px solid #D3D1CB;border-radius:4px;background:#ECEBE7">
+      <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#55575B">E também</span>
+      <span style="font-family:Archivo,sans-serif;font-weight:700;font-size:18px">Piso vinílico</span>
+      <span aria-hidden="true" style="width:6px;height:6px;background:#D99A0B"></span>
+      <span style="font-family:Archivo,sans-serif;font-weight:700;font-size:18px">Carpete corporativo</span>
+      <span style="color:#55575B;font-size:16px">Fornecimento e instalação sobre piso elevado ou contrapiso.</span>
+    </div>
+  </div>
+</section>
+
+<section id="problemas" data-screen-label="Problemas" style="background:#ECEBE7;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Diagnóstico</p>
+    <h2 data-reveal="" style="margin:0;max-width:20ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em">Seu piso está dando sinais?</h2>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px">
+      <sc-for list="{{ problemas }}" as="p" hint-placeholder-count="6">
+        <article data-reveal="" data-delay="{{ p.delay }}" style="background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px;padding:24px;display:flex;flex-direction:column;gap:16px;box-shadow:inset 0 0 0 #F2B01E;transition:box-shadow 250ms cubic-bezier(.2,.7,.2,1)" style-hover="box-shadow:inset 4px 0 0 #F2B01E,0 12px 28px rgba(27,28,30,.12)">
+          <span aria-hidden="true" style="width:48px;height:48px;background:#ECEBE7;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,Menlo,monospace;font-size:12px;font-weight:600;color:#55575B">{{ p.code }}</span>
+          <h3 style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);line-height:1.2;letter-spacing:-0.01em">{{ p.t }}</h3>
+          <p style="margin:0;color:#55575B;line-height:1.6;font-size:16px">{{ p.d }}</p>
+        </article>
+      </sc-for>
+    </div>
+    <div data-reveal="" style="margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding-top:32px;border-top:1px solid #D3D1CB">
+      <p style="margin:0;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);line-height:1.3">Quase todos se resolvem com manutenção, sem troca completa.</p>
+      <a href="#orcamento" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:17px;color:#8A6100;text-decoration:none" style-hover="color:#1B1C1E">Pedir avaliação do meu piso <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="caso" data-screen-label="Caso Alphaville" style="position:relative;overflow:hidden;background:#1B1C1E;color:#F3F2EE;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <sc-if value="{{ showGrid }}" hint-placeholder-val="{{ true }}">
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(#3A3C40 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,#3A3C40 1px,transparent 1px) 0 0/48px 48px;opacity:.3"></div>
+  </sc-if>
+  <div style="position:relative;max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F2B01E"><span style="width:24px;height:2px;background:#F2B01E"></span>Caso real</p>
+    <h2 data-reveal="" style="margin:0;max-width:24ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Caso real: escritório corporativo em Alphaville.</h2>
+    <div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,64px);align-items:flex-start">
+      <div data-reveal="" style="flex:1 1 440px;min-width:0">
+        <div ref="{{ sliderRef }}" onPointerDown="{{ sDown }}" onPointerMove="{{ sMove }}" onPointerUp="{{ sUp }}" onPointerCancel="{{ sUp }}" style="position:relative;aspect-ratio:1/1;border-radius:4px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.15);user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;touch-action:pan-y;cursor:ew-resize">
+          <div style="position:absolute;inset:0;background:#26282B"><img src="assets/caso-depois-3.jpg" alt="Depois: piso elevado em granito preto polido instalado e nivelado, com bordas em granito claro" width="1000" height="1000" loading="lazy" decoding="async" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-select:none"><span style="position:absolute;right:16px;bottom:16px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1B1C1E;background:#F2B01E;padding:6px 10px;border-radius:4px">Depois</span></div>
+          <div style="position:absolute;inset:0;background:#26282B;-webkit-clip-path:inset(0 {{ clipRight }} 0 0);clip-path:inset(0 {{ clipRight }} 0 0)"><img src="assets/caso-antes.jpg" alt="Antes: contrapiso exposto com pedestais reguláveis e placas de granito retiradas" width="1000" height="1000" loading="lazy" decoding="async" draggable="false" style="display:block;width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-select:none"><span style="position:absolute;left:16px;bottom:16px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F3F2EE;background:#1B1C1E;padding:6px 10px;border-radius:4px">Antes</span></div>
+          <div aria-hidden="true" style="position:absolute;top:0;bottom:0;width:3px;margin-left:-1.5px;background:#F2B01E;left:{{ posPct }};pointer-events:none">
+            <span style="position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px 0 0 -22px;background:#F2B01E;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#1B1C1E;font-weight:700;font-size:16px;box-shadow:0 6px 0 rgba(0,0,0,.25);outline:{{ sliderOutline }};outline-offset:3px">⇆</span>
+          </div>
+          <input type="range" min="0" max="100" value="{{ pos }}" onChange="{{ onPos }}" aria-label="Comparar antes e depois" onFocus="{{ sFocus }}" onBlur="{{ sBlur }}" style="position:absolute;top:0;left:0;width:100%;height:100%;margin:0;opacity:0;pointer-events:none;-webkit-appearance:none;appearance:none">
+        </div>
+        <p style="margin:12px 0 0;font-size:14px;color:#B4B5B8">Arraste ou use as setas do teclado para comparar.</p>
+      </div>
+      <div data-reveal="" data-delay="100" style="flex:1 1 400px;min-width:0">
+        <dl style="margin:0;display:flex;flex-direction:column">
+          <sc-for list="{{ caso }}" as="c" hint-placeholder-count="3">
+            <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid #3A3C40">
+              <dt style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F2B01E;padding-top:3px">{{ c.k }}</dt>
+              <dd style="margin:0;color:#F3F2EE;font-size:17px;line-height:1.6">{{ c.v }}</dd>
+            </div>
+          </sc-for>
+        </dl>
+        <div style="margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px">
+          <sc-for list="{{ metricas }}" as="m" hint-placeholder-count="3">
+            <div style="min-width:0;overflow:hidden;container-type:inline-size;background:#26282B;border:1px solid #3A3C40;border-radius:4px;padding:20px 16px">
+              <div style="white-space:nowrap;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.5rem,21cqi,2.6rem);line-height:1;color:#F2B01E;letter-spacing:-0.02em"><span data-count="{{ m.v }}">{{ m.v }}</span><span style="font-size:.5em;margin-left:4px">{{ m.u }}</span></div>
+              <div style="margin-top:10px;font-size:14px;line-height:1.4;color:#B4B5B8">{{ m.l }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:12px 0 0;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#B4B5B8">[PLACEHOLDER] substituir pelos dados reais do projeto.</p>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="caso" style="margin-top:32px;display:inline-flex;align-items:center;min-height:52px;padding:14px 24px;border:2px solid #F3F2EE;color:#F3F2EE;border-radius:4px;font-weight:600;text-decoration:none;transition:transform 250ms,background 250ms" style-hover="background:rgba(243,242,238,.08);transform:translateY(-2px);color:#F3F2EE">Quero um resultado assim</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<sc-if value="{{ showClientes }}" hint-placeholder-val="{{ false }}">
+<section id="clientes" data-screen-label="Prova social" style="background:#F7F6F3;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Clientes</p>
+    <h2 data-reveal="" style="margin:0;max-width:22ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Quem cuida de facilities confia na ZONN.</h2>
+    <div data-reveal="" style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(30%,170px),1fr));gap:1px;background:#D3D1CB;border:1px solid #D3D1CB;border-radius:4px;overflow:hidden">
+      <sc-for list="{{ logos }}" as="l" hint-placeholder-count="6">
+        <div style="height:96px;background:#F7F6F3;display:flex;align-items:center;justify-content:center;filter:grayscale(1);opacity:.7;transition:opacity 250ms,filter 250ms" style-hover="filter:grayscale(0);opacity:1">
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#55575B;border:1px dashed #8C8A84;padding:8px 12px;border-radius:2px">{{ l }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top:32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px">
+      <sc-for list="{{ depoimentos }}" as="d" hint-placeholder-count="3">
+        <figure data-reveal="" data-delay="{{ d.delay }}" style="margin:0;background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px;padding:32px 28px;display:flex;flex-direction:column;gap:20px">
+          <span aria-hidden="true" style="font-family:Archivo,sans-serif;font-weight:800;font-size:64px;line-height:.6;height:32px;color:#D99A0B">“</span>
+          <blockquote style="margin:0;font-size:18px;line-height:1.6;color:#1B1C1E">{{ d.t }}</blockquote>
+          <figcaption style="margin-top:auto;padding-top:20px;border-top:1px solid #D3D1CB;display:flex;justify-content:space-between;align-items:center;gap:12px">
+            <span style="display:flex;flex-direction:column;gap:2px"><strong style="font-weight:600;font-size:16px">{{ d.n }}</strong><span style="font-size:14px;color:#55575B">{{ d.c }}</span></span>
+            <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#55575B;border:1px dashed #8C8A84;padding:6px 8px;border-radius:2px">LOGO</span>
+          </figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<section id="como-funciona" data-screen-label="Como funciona" style="background:#ECEBE7;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Como funciona</p>
+    <h2 data-reveal="" style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em">Seu orçamento em 4 passos.</h2>
+    <ol style="list-style:none;margin:56px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:40px 0">
+      <sc-for list="{{ passos }}" as="p" hint-placeholder-count="4">
+        <li data-reveal="" data-delay="{{ p.delay }}" style="position:relative;padding:0 24px 0 0">
+          <div style="display:flex;align-items:center">
+            <span style="flex:none;width:40px;height:40px;border:2px solid #1B1C1E;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Archivo,sans-serif;font-weight:700;font-size:16px;background:{{ p.bg }}">{{ p.n }}</span>
+            <span aria-hidden="true" style="flex:1;height:2px;background:#D3D1CB;margin-left:12px"></span>
+          </div>
+          <h3 style="margin:24px 0 8px;font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.15rem,1rem + .6vw,1.45rem);line-height:1.2">{{ p.t }}</h3>
+          <p style="margin:0;color:#55575B;font-size:16px;line-height:1.6;max-width:32ch">{{ p.d }}</p>
+        </li>
+      </sc-for>
+    </ol>
+    <div data-reveal="" style="margin-top:56px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="como-funciona" style="flex:0 1 auto;display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:14px 24px;background:#F2B01E;color:#1B1C1E;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms,box-shadow 250ms" style-hover="background:#FFC23D;transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25);color:#1B1C1E">Começar pelo passo 1</a>
+      <span style="color:#55575B;font-size:15px">Envie fotos pelo WhatsApp e receba uma primeira avaliação.</span>
+    </div>
+  </div>
+</section>
+
+<section id="obras" data-screen-label="Obras" style="background:#F7F6F3;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div>
+        <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Portfólio</p>
+        <h2 data-reveal="" style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em">Obras entregues.</h2>
+      </div>
+      <div role="group" aria-label="Filtrar obras" style="display:flex;flex-wrap:wrap;gap:8px">
+        <sc-for list="{{ chips }}" as="c" hint-placeholder-count="4">
+          <button onClick="{{ c.on }}" aria-pressed="{{ c.active }}" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }};font-family:Barlow,sans-serif;font-size:15px;font-weight:600;white-space:nowrap;cursor:pointer;transition:border-color 150ms" style-hover="border-color:#1B1C1E">{{ c.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));grid-auto-rows:160px;grid-auto-flow:dense;gap:16px">
+      <sc-for list="{{ obras }}" as="o" hint-placeholder-count="6">
+        <button onClick="{{ o.open }}" aria-label="{{ o.aria }}" style="grid-row:span {{ o.span }};position:relative;overflow:hidden;padding:0;border:0;border-radius:4px;cursor:zoom-in;text-align:left;background:repeating-linear-gradient(135deg,#E4E2DD 0 12px,#ECEBE7 12px 24px);transition:box-shadow 250ms" style-hover="box-shadow:0 12px 28px rgba(27,28,30,.16)">
+          <sc-if value="{{ o.hasImg }}" hint-placeholder-val="{{ false }}"><img src="{{ o.img }}" alt="" width="900" height="1200" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 600ms cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.04)"></sc-if>
+          <sc-if value="{{ o.noImg }}" hint-placeholder-val="{{ true }}"><span style="position:absolute;top:14px;left:14px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#55575B">FOTO DE OBRA</span></sc-if>
+          <span style="position:absolute;left:0;right:0;bottom:0;padding:48px 16px 16px;background:linear-gradient(transparent,rgba(27,28,30,.92));display:flex;flex-direction:column;gap:6px">
+            <span style="align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#F2B01E;color:#1B1C1E;padding:3px 8px;border-radius:2px">{{ o.cat }}</span>
+            <span style="font-family:Archivo,sans-serif;font-weight:700;font-size:17px;color:#F3F2EE">{{ o.t }}</span>
+          </span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" data-screen-label="Quem somos" style="background:#26282B;color:#F3F2EE;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(40px,5vw,72px);align-items:center">
+    <div style="flex:1 1 460px;min-width:0">
+      <p data-reveal="" style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F2B01E"><span style="width:24px;height:2px;background:#F2B01E"></span>Quem somos</p>
+      <h2 data-reveal="" style="margin:0;max-width:20ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em;text-wrap:balance">Especialistas em piso técnico, não em “reforma geral”.</h2>
+      <p data-reveal="" style="margin:24px 0 0;max-width:62ch;font-size:clamp(1.02rem,.97rem + .25vw,1.15rem);line-height:1.6;color:#B4B5B8">A ZONN trabalha só com piso elevado e revestimentos corporativos. Isso significa equipe treinada para o sistema, peças compatíveis com as principais linhas do mercado e um processo pensado para ambientes que não podem parar.</p>
+      <ul style="list-style:none;margin:40px 0 0;padding:0;display:flex;flex-direction:column">
+        <sc-for list="{{ difs }}" as="d" hint-placeholder-count="3">
+          <li data-reveal="" data-delay="{{ d.delay }}" style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid #3A3C40">
+            <span style="font-family:Archivo,sans-serif;font-weight:800;font-size:20px;color:#F2B01E">{{ d.n }}</span>
+            <span><strong style="display:block;font-family:Archivo,sans-serif;font-weight:700;font-size:19px;color:#F3F2EE">{{ d.t }}</strong><span style="display:block;margin-top:6px;color:#B4B5B8;line-height:1.6;font-size:16px">{{ d.d }}</span></span>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+    <div data-reveal="" data-delay="150" style="flex:1 1 360px;min-width:0">
+      <img src="assets/equipe-obra-3.jpg" alt="Equipe ZONN instalando piso elevado em pavimento corporativo: técnicos assentando placas, pilhas de placas e ferramentas sobre o piso e pedestais reguláveis à mostra na borda" width="1200" height="960" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;border-radius:4px;background:#26282B;box-shadow:0 40px 80px rgba(0,0,0,.15)">
+    </div>
+  </div>
+</section>
+
+<section id="orcamento" data-screen-label="Formulário" style="background:#ECEBE7;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto;background:#FFFFFF;border:1px solid #D3D1CB;border-radius:4px;display:flex;flex-wrap:wrap">
+    <div style="flex:1 1 360px;min-width:0;padding:clamp(28px,4vw,56px);border-right:1px solid #D3D1CB">
+      <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>Orçamento</p>
+      <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em">Conte sobre o seu piso.</h2>
+      <p style="margin:20px 0 0;font-size:18px;line-height:1.6;color:#55575B">Respondemos pelo WhatsApp em horário comercial.</p>
+      <ul style="list-style:none;margin:32px 0 0;padding:0;display:flex;flex-direction:column;gap:14px">
+        <sc-for list="{{ argumentos }}" as="a" hint-placeholder-count="3">
+          <li style="display:flex;gap:12px;font-size:16px;line-height:1.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D99A0B" stroke-width="3" aria-hidden="true" style="flex:none;margin-top:3px"><path d="M4 12l5 5L20 6"></path></svg>{{ a }}</li>
+        </sc-for>
+      </ul>
+      <div style="margin-top:40px;padding-top:24px;border-top:1px solid #D3D1CB;display:flex;flex-direction:column;gap:6px;font-size:16px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#55575B">Contato direto</span>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="formulario" style="font-family:Archivo,sans-serif;font-weight:700;font-size:20px;color:#1B1C1E;text-decoration:none" style-hover="color:#8A6100">{{ phoneLabel }}</a>
+        <span style="color:#55575B"><a href="mailto:contato@zonn.com.br" data-evento="clique_email" data-origem="formulario" style="color:#55575B">contato@zonn.com.br</a> · Seg a sex, 8h às 18h</span>
+      </div>
+    </div>
+    <form data-form="orcamento" data-clarity-mask="true" onSubmit="{{ submit }}" noValidate="{{ true }}" style="flex:1.4 1 440px;min-width:0;padding:clamp(28px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:20px">
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Nome *
+        <input name="nome" autoComplete="name" aria-invalid="{{ inv.nome }}" aria-describedby="err-nome" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid {{ fb.nome }};border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+        <span id="err-nome" aria-live="polite" style="color:#B3261E;font-weight:500;font-size:14px">{{ er.nome }}</span>
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Empresa
+        <input name="empresa" autoComplete="organization" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid #8C8A84;border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">WhatsApp *
+        <input name="whats" type="tel" inputMode="tel" autoComplete="tel" placeholder="(11) 90000-0000" aria-invalid="{{ inv.whats }}" aria-describedby="err-whats" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid {{ fb.whats }};border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+        <span id="err-whats" aria-live="polite" style="color:#B3261E;font-weight:500;font-size:14px">{{ er.whats }}</span>
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">E-mail
+        <input name="email" type="email" inputMode="email" autoComplete="email" placeholder="nome@empresa.com.br" data-clarity-mask="true" aria-invalid="{{ inv.email }}" aria-describedby="err-email" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid {{ fb.email }};border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+        <span id="err-email" aria-live="polite" style="color:#B3261E;font-weight:500;font-size:14px">{{ er.email }}</span>
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Cidade
+        <input name="cidade" autoComplete="address-level2" placeholder="São Paulo" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid #8C8A84;border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Tipo de ambiente *
+        <select name="ambiente" aria-invalid="{{ inv.ambiente }}" aria-describedby="err-ambiente" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid {{ fb.ambiente }};border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231B1C1E' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E&quot;) no-repeat right 14px center;padding-right:40px;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+          <option value="">Selecione</option><option>Escritório</option><option>Data center</option><option>Sala técnica</option><option>Outro</option>
+        </select>
+        <span id="err-ambiente" aria-live="polite" style="color:#B3261E;font-weight:500;font-size:14px">{{ er.ambiente }}</span>
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Serviço *
+        <select name="servico" aria-invalid="{{ inv.servico }}" aria-describedby="err-servico" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid {{ fb.servico }};border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231B1C1E' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E&quot;) no-repeat right 14px center;padding-right:40px;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+          <option value="">Selecione</option><option>Instalação</option><option>Manutenção</option><option>Restauração</option><option>Vinílico</option><option>Carpete corporativo</option>
+        </select>
+        <span id="err-servico" aria-live="polite" style="color:#B3261E;font-weight:500;font-size:14px">{{ er.servico }}</span>
+      </label>
+      <label style="display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Metragem aproximada (m²)
+        <input name="metragem" inputMode="numeric" placeholder="Ex.: 250" style="-webkit-appearance:none;appearance:none;height:52px;padding:0 14px;border:1px solid #8C8A84;border-radius:4px;font:400 16px Barlow,sans-serif;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E">
+      </label>
+      <label style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600">Mensagem
+        <textarea name="mensagem" rows="4" placeholder="Descreva o problema ou o projeto" style="-webkit-appearance:none;appearance:none;padding:14px;border:1px solid #8C8A84;border-radius:4px;font:400 16px/1.5 Barlow,sans-serif;resize:vertical;background:#FFFFFF;color:#1B1C1E" style-focus="border-color:#1B1C1E"></textarea>
+      </label>
+      <div style="grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px">
+        <button type="submit" style="flex:0 1 auto;display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:52px;padding:14px 28px;background:#F2B01E;color:#1B1C1E;border:0;border-radius:4px;font:600 17px Barlow,sans-serif;cursor:pointer;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms,box-shadow 250ms" style-hover="background:#FFC23D;transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25)" style-active="background:#D99A0B;transform:translateY(0);box-shadow:none">{{ submitLabel }}</button>
+        <span style="font-size:14px;color:#55575B">Seus dados são usados apenas para este orçamento.</span>
+      </div>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <p role="status" style="grid-column:1/-1;margin:0;padding:14px 16px;background:#ECEBE7;border-radius:4px;font-size:15px">O WhatsApp não abriu? <a href="{{ waUrl }}" target="_blank" rel="noopener" style="color:#8A6100;font-weight:600">Abrir a conversa manualmente</a></p>
+      </sc-if>
+    </form>
+  </div>
+</section>
+
+<section id="faq" data-screen-label="FAQ" style="background:#F7F6F3;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div style="max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:40px clamp(40px,6vw,96px);align-items:flex-start">
+    <div style="flex:1 1 300px;min-width:0;position:{{ faqPos }};top:96px">
+      <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6100"><span style="width:24px;height:2px;background:#8A6100"></span>FAQ</p>
+      <h2 style="margin:0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(1.8rem,1.1rem + 2.6vw,3.1rem);line-height:1.05;letter-spacing:-0.02em">Perguntas frequentes.</h2>
+      <p style="margin:20px 0 0;color:#55575B;font-size:17px;line-height:1.6;max-width:36ch">Não encontrou sua dúvida? Pergunte direto a um técnico.</p>
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="faq" style="margin-top:24px;display:inline-flex;align-items:center;min-height:52px;padding:14px 24px;border:2px solid #1B1C1E;color:#1B1C1E;border-radius:4px;font-weight:600;text-decoration:none;transition:transform 250ms,background 250ms" style-hover="background:rgba(27,28,30,.05);transform:translateY(-2px);color:#1B1C1E">Perguntar no WhatsApp</a>
+    </div>
+    <div style="flex:2 1 520px;min-width:0;border-top:1px solid #D3D1CB">
+      <sc-for list="{{ faq }}" as="f" hint-placeholder-count="8">
+        <div style="border-bottom:1px solid #D3D1CB">
+          <h3 style="margin:0">
+            <button id="{{ f.bid }}" data-evento="faq_aberta" data-pergunta="{{ f.q }}" onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" aria-controls="{{ f.pid }}" style="width:100%;min-height:64px;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:24px;background:transparent;border:0;text-align:left;cursor:pointer;font-family:Archivo,sans-serif;font-weight:600;font-size:20px;line-height:1.3;color:#1B1C1E">
+              <span>{{ f.q }}</span>
+              <span aria-hidden="true" style="flex:none;width:32px;height:32px;border:1px solid #D3D1CB;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:500;color:#1B1C1E;transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms;transform:rotate({{ f.rot }});background:{{ f.iconBg }}">+</span>
+            </button>
+          </h3>
+          <div id="{{ f.pid }}" role="region" aria-labelledby="{{ f.bid }}" style="display:grid;grid-template-rows:{{ f.rows }};transition:grid-template-rows 250ms cubic-bezier(.2,.7,.2,1)">
+            <div style="overflow:hidden"><p style="margin:0;padding:0 56px 24px 0;color:#55575B;font-size:17px;line-height:1.6;max-width:62ch">{{ f.a }}</p></div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="CTA final" style="position:relative;overflow:hidden;background:#F2B01E;color:#1B1C1E;padding:clamp(64px,3rem + 4vw,120px) clamp(16px,4vw,80px)">
+  <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(#1B1C1E 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,#1B1C1E 1px,transparent 1px) 0 0/48px 48px;opacity:.06"></div>
+  <div style="position:relative;max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px">
+    <div style="flex:1 1 520px;min-width:0">
+      <h2 data-reveal="" style="margin:0;max-width:18ch;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(2rem,1.1rem + 3.4vw,3.8rem);line-height:1.02;letter-spacing:-0.02em;text-wrap:balance">Piso com problema hoje é parada amanhã.</h2>
+      <p data-reveal="" style="margin:20px 0 0;font-size:clamp(1.1rem,1rem + .4vw,1.25rem);line-height:1.6;max-width:50ch">Agende a visita técnica e receba o diagnóstico com proposta por escrito.</p>
+    </div>
+    <div data-reveal="" style="flex:0 1 auto;display:flex;flex-wrap:wrap;gap:12px">
+      <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="cta-final" style="flex:1 1 220px;display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:14px 24px;background:#1B1C1E;color:#F3F2EE;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms cubic-bezier(.2,.7,.2,1),box-shadow 250ms" style-hover="transform:translateY(-2px);box-shadow:0 6px 0 rgba(0,0,0,.25);color:#F3F2EE">Falar com um técnico</a>
+      <a href="#orcamento" style="flex:1 1 220px;display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:14px 24px;border:2px solid #1B1C1E;color:#1B1C1E;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;transition:transform 250ms,background 250ms" style-hover="background:rgba(27,28,30,.06);transform:translateY(-2px);color:#1B1C1E">Preencher formulário</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer data-screen-label="Rodapé" style="background:#121314;color:#B4B5B8;padding:72px clamp(16px,4vw,80px) 32px">
+  <div style="max-width:1240px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <span style="display:flex;align-items:center;gap:10px;color:#F3F2EE"><span style="width:22px;height:22px;background:#F2B01E;border-radius:2px;box-shadow:inset 0 0 0 5px #121314, 0 0 0 1px #F2B01E"></span><span style="font-family:Archivo,sans-serif;font-weight:800;font-size:22px">ZONN</span></span>
+        <p style="margin:0;font-size:15px;line-height:1.6;max-width:34ch">Instalação, manutenção e restauração de piso elevado, vinílico e carpete corporativo em São Paulo e região.</p>
+        <div style="display:flex;gap:8px">
+          <a href="https://www.instagram.com/zonnpisoselevado/" target="_blank" rel="noopener" aria-label="Instagram da ZONN (abre em nova aba)" style="width:44px;height:44px;border-radius:6px;background:rgba(243,242,238,.06);display:flex;align-items:center;justify-content:center;color:#B4B5B8;text-decoration:none;transition:background 150ms,color 150ms" style-hover="background:rgba(243,242,238,.12);color:#F2B01E">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.6"></circle><circle cx="16.6" cy="7.4" r=".6" fill="currentColor"></circle></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn da ZONN" style="width:44px;height:44px;border-radius:6px;background:rgba(243,242,238,.06);display:flex;align-items:center;justify-content:center;color:#B4B5B8;text-decoration:none;transition:background 150ms,color 150ms" style-hover="background:rgba(243,242,238,.12);color:#F2B01E">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10.5V17"></path><circle cx="7" cy="7.2" r=".6" fill="currentColor"></circle><path d="M11 17v-6.5"></path><path d="M11 13.4c0-1.7 1.2-2.9 2.8-2.9s2.7 1.2 2.7 2.9V17"></path></svg>
+          </a>
+        </div>
+      </div>
+      <nav aria-label="Rodapé" style="display:flex;flex-direction:column;gap:4px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F3F2EE;margin-bottom:8px">Navegação</span>
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+          <a href="{{ n.href }}" style="min-height:36px;display:flex;align-items:center;color:#B4B5B8;text-decoration:none;font-size:15px" style-hover="color:#F3F2EE">{{ n.label }}</a>
+        </sc-for>
+      </nav>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F3F2EE;margin-bottom:6px">Contato</span>
+        <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="rodape" style="color:#F3F2EE;text-decoration:none;font-weight:600" style-hover="color:#F2B01E">{{ phoneLabel }}</a>
+        <a href="mailto:contato@zonn.com.br" data-evento="clique_email" data-origem="rodape" style="color:#B4B5B8;text-decoration:none" style-hover="color:#F3F2EE">contato@zonn.com.br</a>
+        <span>R. Zéquinha de Abreu · Parque Santa Teresa<br>Carapicuíba, SP · 06341-340</span>
+        <span>Seg a sex, 8h às 18h · execução também fora do horário</span>
+      </div>
+    </div>
+    <div style="margin-top:56px;padding-top:24px;border-top:1px solid #3A3C40;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px">
+      <span>© 2026 ZONN Pisos Elevados · CNPJ 66.742.709/0001-70</span>
+      <span style="display:flex;gap:20px"><a href="privacidade.html" style="color:#B4B5B8" style-hover="color:#F3F2EE">Política de privacidade</a><a href="#" data-cookie-prefs="" style="color:#B4B5B8" style-hover="color:#F3F2EE">Preferências de cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<sc-if value="{{ floatOn }}" hint-placeholder-val="{{ false }}">
+  <a href="{{ waLink }}" target="_blank" rel="noopener" data-evento="clique_whatsapp" data-origem="flutuante" aria-label="Solicite orçamento pelo WhatsApp" style="position:fixed;right:20px;bottom:20px;z-index:40;height:56px;padding:0 6px 0 20px;border-radius:999px;background:#1A7F37;color:#FFFFFF;display:flex;align-items:center;gap:12px;text-decoration:none;font:600 16px Barlow,sans-serif;white-space:nowrap;box-shadow:0 12px 28px rgba(27,28,30,.24);transition:transform 250ms cubic-bezier(.2,.7,.2,1),background 250ms" style-hover="background:#146C2E;transform:translateY(-2px);color:#FFFFFF">
+    <span>Solicite orçamento</span>
+    <span style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
+    </span>
+  </a>
+</sc-if>
+
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="{{ lb.t }}" onClick="{{ closeLb }}" style="position:fixed;inset:0;z-index:70;background:rgba(18,19,20,.92);display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,64px)">
+    <figure style="margin:0;width:min(100%,1000px);display:flex;flex-direction:column;gap:16px">
+      {{ lbImgEl }}
+      <sc-if value="{{ lbNoImg }}" hint-placeholder-val="{{ true }}"><div style="aspect-ratio:16/10;border-radius:4px;background:repeating-linear-gradient(135deg,#33353A 0 12px,#2D2F33 12px 24px);display:flex;align-items:flex-end;padding:20px"><span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#B4B5B8">FOTO AMPLIADA · {{ lb.t }}</span></div></sc-if>
+      <figcaption style="display:flex;justify-content:space-between;align-items:center;gap:16px;color:#F3F2EE">
+        <span><strong style="font-family:Archivo,sans-serif;font-size:20px">{{ lb.t }}</strong><span style="display:block;color:#B4B5B8;font-size:15px">{{ lb.cat }}</span></span>
+        <button onClick="{{ closeLb }}" style="min-height:44px;padding:10px 20px;background:transparent;border:1px solid #3A3C40;border-radius:4px;color:#F3F2EE;font:600 15px Barlow,sans-serif;cursor:pointer">Fechar (Esc)</button>
+      </figcaption>
+    </figure>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5511958732945&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showGridTexture&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showFloatingWhats&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1440, scrolled: false, float: false, y: 0, menu: false, pos: 50, filter: 'Todos', faq: 0, lb: null, errors: {}, sent: false, sending: false, waUrl: '' };
+
+  componentDidMount() {
+    this.onScroll = () => {
+      const y = window.scrollY, s = y > 80, f = y > 400;
+      if (s !== this.state.scrolled || f !== this.state.float) this.setState({ scrolled: s, float: f });
+      if (y < 1200) this.setState({ y });
+    };
+    this.onResize = () => this.setState({ w: window.innerWidth });
+    this.onKey = e => {
+      if (e.key !== 'Escape') return;
+      this.setState({ lb: null, menu: false });
+      const d = this.dlgRef.current;
+      if (d && d.open) { e.preventDefault(); this.closeFicha(); }
+      else if (this.locked) this.onDlgClose && this.onDlgClose();
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('keydown', this.onKey);
+    this.onDlgClose = () => {
+      this.unlockScroll();
+      const r = this.retFocus; this.retFocus = null;
+      if (r && r.isConnected) r.focus({ preventScroll: true });
+    };
+    this.onAnchor = e => {
+      const a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a || a.hasAttribute('data-cookie-prefs')) return;
+      const id = a.getAttribute('href').slice(1);
+      const el = id ? document.getElementById(id) : null;
+      if (!el) return;
+      e.preventDefault();
+      const to = Math.max(0, el.getBoundingClientRect().top + window.scrollY - (id === 'topo' ? 68 : 60));
+      if (this.rm) { window.scrollTo(0, to); return; }
+      cancelAnimationFrame(this.scrollRaf);
+      const from = window.scrollY, dist = to - from;
+      const dur = Math.min(1100, Math.max(500, Math.abs(dist) * 0.35)), t0 = performance.now();
+      const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      const step = t => {
+        const p = Math.min(1, (t - t0) / dur);
+        window.scrollTo(0, from + dist * ease(p));
+        if (p < 1) this.scrollRaf = requestAnimationFrame(step);
+        else { el.setAttribute('tabindex', '-1'); el.focus({ preventScroll: true }); history.replaceState(null, '', '#' + id); }
+      };
+      this.scrollRaf = requestAnimationFrame(step);
+      const stop = () => { cancelAnimationFrame(this.scrollRaf); window.removeEventListener('wheel', stop); window.removeEventListener('touchstart', stop); };
+      window.addEventListener('wheel', stop, { passive: true, once: true });
+      window.addEventListener('touchstart', stop, { passive: true, once: true });
+    };
+    document.addEventListener('click', this.onAnchor);
+    this.rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    setTimeout(() => this.setupReveal(), 50);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('keydown', this.onKey);
+    this.io && this.io.disconnect();
+    clearTimeout(this.fallback);
+    this.dlgMo && this.dlgMo.disconnect();
+    document.removeEventListener('click', this.onAnchor);
+    this.unlockScroll();
+    cancelAnimationFrame(this.scrollRaf);
+  }
+  setupReveal() {
+    if (this.rm || !('IntersectionObserver' in window)) return;
+    const ease = 'cubic-bezier(.2,.7,.2,1)';
+    this.io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target; this.io.unobserve(el);
+      if (el.dataset.count != null) return this.countUp(el);
+      el.style.opacity = '1'; el.style.transform = 'none';
+    }), { rootMargin: '0px 0px -6% 0px' });
+    const show = el => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    const els = [...document.querySelectorAll('[data-reveal]')];
+    const vh = window.innerHeight;
+    els.forEach(el => {
+      const d = el.dataset.delay || 0;
+      el.style.transition = `opacity 600ms ${ease} ${d}ms, transform 600ms ${ease} ${d}ms`;
+      el.style.opacity = '0'; el.style.transform = 'translateY(16px)';
+      if (el.getBoundingClientRect().top < vh) requestAnimationFrame(() => requestAnimationFrame(() => show(el)));
+      else this.io.observe(el);
+    });
+    document.querySelectorAll('[data-count]').forEach(el => this.io.observe(el));
+    this.fallback = setTimeout(() => els.forEach(el => { if (el.style.opacity === '0') show(el); }), 2500);
+  }
+  countUp(el) {
+    const end = parseFloat(el.dataset.count); if (!end) return;
+    const t0 = performance.now();
+    const step = t => { const p = Math.min(1, (t - t0) / 1200); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))).toLocaleString('pt-BR'); if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+
+  submit = e => {
+    e.preventDefault();
+    const f = e.target.elements, v = k => (f[k] && f[k].value || '').trim();
+    const errors = {};
+    if (!v('nome')) errors.nome = 'Informe seu nome.';
+    if (v('whats').replace(/\D/g, '').length < 10) errors.whats = 'Informe um WhatsApp com DDD.';
+    if (v('email') && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v('email'))) errors.email = 'Confira o e-mail informado.';
+    if (!v('ambiente')) errors.ambiente = 'Selecione o tipo de ambiente.';
+    if (!v('servico')) errors.servico = 'Selecione o serviço.';
+    this.setState({ errors });
+    const first = Object.keys(errors)[0];
+    if (first) { f[first].focus(); return; }
+    let lines = [
+      '*Pedido de orçamento — site ZONN*',
+      `Nome: ${v('nome')}`, v('empresa') && `Empresa: ${v('empresa')}`, `WhatsApp: ${v('whats')}`, v('email') && `E-mail: ${v('email')}`,
+      `Ambiente: ${v('ambiente')}`, `Serviço: ${v('servico')}`,
+      v('metragem') && `Metragem: ${v('metragem')} m²`, v('cidade') && `Cidade: ${v('cidade')}`,
+      v('mensagem') && `Mensagem: ${v('mensagem')}`
+    ].filter(Boolean).join('\n');
+    const Z = window.ZONN;
+    let number = this.num();
+    try {
+      if (Z && Z.formSubmit) {
+        const meta = Z.formSubmit({ servico: v('servico'), ambiente: v('ambiente'), metragem: v('metragem') });
+        lines += `\n\nProtocolo: ${meta.protocolo}\nOrigem: ${meta.origem}`;
+        number = Z.number() || number;
+      }
+    } catch (err) {}
+    const waUrl = `https://wa.me/${number}?text=${encodeURIComponent(lines)}`;
+    this.setState({ sending: true, sent: true, waUrl });
+    window.open(waUrl, '_blank', 'noopener');
+    setTimeout(() => this.setState({ sending: false }), 2500);
+  };
+  dlgRef = React.createRef();
+  sliderRef = React.createRef();
+  sPos = e => {
+    const el = this.sliderRef.current; if (!el) return;
+    const r = el.getBoundingClientRect();
+    const p = Math.max(0, Math.min(100, ((e.clientX - r.left) / r.width) * 100));
+    this.setState({ pos: Math.round(p) });
+  };
+  sDown = e => { this.dragging = true; try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {} this.sPos(e); };
+  sMove = e => { if (this.dragging) this.sPos(e); };
+  sUp = () => { this.dragging = false; };
+  lockScroll() {
+    if (this.locked) return;
+    this.locked = true; this.lockY = window.scrollY;
+    const b = document.body.style;
+    b.position = 'fixed'; b.top = `-${this.lockY}px`; b.left = '0'; b.right = '0'; b.width = '100%';
+    document.documentElement.style.overflow = 'hidden';
+  }
+  unlockScroll() {
+    document.documentElement.style.overflow = '';
+    if (!this.locked) return;
+    this.locked = false;
+    const b = document.body.style;
+    b.position = ''; b.top = ''; b.left = ''; b.right = ''; b.width = '';
+    const st = document.documentElement.style; const prev = st.scrollBehavior; st.scrollBehavior = 'auto';
+    window.scrollTo(0, this.lockY || 0); st.scrollBehavior = prev;
+  }
+  PRODUTOS = [
+    { slug: 'metalico', foto: 'assets/produto-metalico.jpg', nome: 'Piso Elevado Metálico', msgNome: 'Metálico', material: 'Metálico', filtros: ['corporativo'],
+      aplicacao: 'Escritórios, CPDs e data centers.',
+      descricao: 'Placa de aço com núcleo de concreto leve, feita para quem precisa de piso firme, nivelado e com acesso fácil ao cabeamento. É a escolha padrão de escritórios e data centers. Aceita acabamento vinílico ou laminado e tem versões reforçadas para cargas pesadas, como racks e nobreaks.',
+      indicado: ['Escritórios corporativos', 'CPDs', 'Data centers', 'Salas técnicas'],
+      specs: [['Dimensões', '600 × 600 × 40 mm'], ['Estrutura', 'Chapa de aço carbono laminado a frio'], ['Núcleo', 'Concreto celular leve']],
+      acabamentos: ['Sem revestimento', 'Vinílico', 'Laminado melamínico'],
+      modelos: [
+        ['F52', 'Sem longarina', 'Escritório', '440', '1.200', '1.500'],
+        ['F62', 'Com longarina', 'CPD', '500', '1.290', '1.800'],
+        ['F62-2000', 'Com longarina', 'Data center', '555', '1.565', '2.500'],
+        ['F62-2500', 'Com longarina', 'Data center', '750', '1.800', '3.000'],
+        ['F62-3000', 'Com longarina', 'Data center', '1.000', '2.000', '3.500'],
+        ['F62-3500', 'Com longarina', 'Data center', '1.250', '2.500', '4.000'],
+        ['F62-4000', 'Com longarina', 'Data center', '1.500', '3.000', '5.000']
+      ],
+      chips: ['600×600×40 mm', 'até 1.500 kg de projeto'] },
+    { slug: 'ardosia', foto: 'assets/produto-ardosia.jpg', nome: 'Piso Elevado em Ardósia', msgNome: 'em Ardósia', material: 'Ardósia', filtros: ['externas'],
+      aplicacao: 'Áreas internas e externas de alto tráfego.',
+      descricao: 'Placa de pedra natural de alta dureza e baixa absorção de água, resistente ao desgaste diário. Une o visual rústico da ardósia à praticidade do piso elevado, com instalação seca e acesso fácil às instalações sob o piso.',
+      indicado: ['Terraços', 'Varandas', 'Áreas comerciais', 'Áreas internas'],
+      specs: [['Dimensões', '600 × 600 mm ou sob medida'], ['Espessura 20 mm', 'Carga concentrada 1.012 kg · distribuída 1.500 kg/m²'], ['Espessura 25 mm', 'Carga concentrada 1.496 kg · distribuída 2.000 kg/m²']],
+      chips: ['20 ou 25 mm', 'até 2.000 kg/m²'] },
+    { slug: 'granito', foto: 'assets/produto-granito.jpg', nome: 'Piso Elevado em Granito', msgNome: 'em Granito', material: 'Granito', filtros: ['externas', 'especiais'],
+      aplicacao: 'Halls, recepções e projetos de alto padrão.',
+      descricao: 'Acabamento nobre em granito natural, com várias cores e texturas: polido, levigado, jateado, flameado ou escovado. Ideal quando o piso também é parte da arquitetura.',
+      indicado: ['Halls e recepções', 'Áreas externas', 'Alto padrão'],
+      specs: [['Dimensões', '600 × 600 mm ou sob medida'], ['Espessura', '20 mm e 30 mm'], ['Carga concentrada', '600 kg'], ['Carga distribuída', '1.200 kg/m²']],
+      chips: ['20 ou 30 mm', '1.200 kg/m²'] },
+    { slug: 'cimenticio', foto: 'assets/produto-cimenticio-2.jpg', nome: 'Piso Elevado Cimentício', msgNome: 'Cimentício', material: 'Cimentício', filtros: ['corporativo', 'externas'],
+      aplicacao: 'Áreas técnicas, indústrias e coberturas.',
+      descricao: 'Placa de base cimentícia, robusta e de ótimo custo-benefício. Aceita vários acabamentos por cima e suporta carga distribuída elevada.',
+      indicado: ['Áreas técnicas', 'Indústrias', 'Coberturas', 'Áreas externas'],
+      specs: [['Dimensões', '600 × 600 mm ou sob medida'], ['Espessura', '40 mm'], ['Carga concentrada', '450 a 1.000 kg'], ['Carga distribuída', '2.000 kg/m²']],
+      chips: ['40 mm', '2.000 kg/m²'] }
+  ];
+  openFicha(slug, e) {
+    this.retFocus = e && e.currentTarget;
+    this.setState({ fp: slug }, () => {
+      const d = this.dlgRef.current;
+      if (d && !d.__zonnBound) {
+        const done = () => this.onDlgClose && this.onDlgClose();
+        d.addEventListener('close', done);
+        d.addEventListener('cancel', done);
+        if ('MutationObserver' in window) { this.dlgMo = new MutationObserver(() => { if (!d.open) done(); }); this.dlgMo.observe(d, { attributes: true, attributeFilter: ['open'] }); }
+        d.__zonnBound = 1;
+      }
+      if (d && !d.open) {
+        if (d.showModal) d.showModal(); else d.setAttribute('open', '');
+        this.lockScroll();
+        d.scrollTop = 0;
+      }
+      try { window.ZONN && window.ZONN.track && window.ZONN.track('ficha_produto_aberta', { produto: slug }); } catch (err) {}
+    });
+  }
+  closeFicha = () => { const d = this.dlgRef.current; if (d && d.open) d.close(); this.onDlgClose && this.onDlgClose(); };
+  num() { return String(this.props.whatsappNumber ?? '5511958732945').replace(/\D/g, ''); }
+
+  produtoVals(num) {
+    const s = this.state, pf = s.pf || 'todos';
+    const cats = [['todos', 'Todos'], ['corporativo', 'Corporativo e data center'], ['externas', 'Áreas externas'], ['especiais', 'Projetos especiais']];
+    const P = this.PRODUTOS;
+    const cur = P.find(p => p.slug === s.fp) || P[0];
+    const waFor = p => `https://wa.me/${num}?text=${encodeURIComponent(`Olá! Vim pelo site da ZONN e quero um orçamento de Piso Elevado ${p.msgNome}. [origem: produtos]`)}`;
+    const mobile = s.w < 640;
+    return {
+      pcols: (() => { const n = P.filter(p => pf === 'todos' || p.filtros.includes(pf)).length; if (s.w < 640) return 1; if (s.w < 1024) return 2; return n === 4 ? (s.w >= 1180 ? 4 : 2) : 3; })(),
+      pchips: cats.map(([k, label]) => { const a = pf === k; return { label, active: a, bg: a ? '#1B1C1E' : '#FFFFFF', fg: a ? '#F3F2EE' : '#55575B', border: a ? '#1B1C1E' : '#D3D1CB', on: () => this.setState({ pf: k }) }; }),
+      produtosList: P.filter(p => pf === 'todos' || p.filtros.includes(pf)).map(p => {
+        const h = s.hov === p.slug && !this.rm;
+        return {
+          ...p, foto: p.foto || '', hasFoto: !!p.foto, noFoto: !p.foto,
+          alt: `${p.nome}: placa instalada, ${p.aplicacao.toLowerCase()}`,
+          zoom: h ? 'scale(1.04)' : 'scale(1)',
+          shadow: s.hov === p.slug ? 'inset 4px 0 0 #F2B01E, 0 6px 0 rgba(0,0,0,.25)' : 'inset 0 0 0 #F2B01E, 0 0 0 rgba(0,0,0,0)',
+          enter: () => this.setState({ hov: p.slug }), leave: () => this.setState({ hov: null }),
+          open: e => this.openFicha(p.slug, e)
+        };
+      }),
+      fp: {
+        nome: cur.nome, nomeFull: cur.nome, descricao: cur.descricao, indicado: cur.indicado, msgNome: cur.msgNome,
+        specs: cur.specs.map(([k, v]) => ({ k, v })),
+        hasModelos: !!(cur.modelos && cur.modelos.length),
+        modelos: (cur.modelos || []).map((r, i) => ({ modelo: r[0], montagem: r[1], aplicacao: r[2], projeto: r[3], ruptura: r[4], seguranca: r[5], bg: i % 2 ? '#F7F6F3' : '#FFFFFF' })),
+        acabamentos: cur.acabamentos || [],
+        wa: waFor(cur), origem: `produtos-${cur.slug}`
+      },
+      modeloCols: ['Modelo', 'Montagem', 'Aplicação', 'Carga de projeto (kg)', 'Carga mín. de ruptura (kg)', 'Carga de segurança (kg)'],
+      dlgRef: this.dlgRef, closeFicha: this.closeFicha,
+      dlgBackdrop: e => { if (e.target === e.currentTarget) this.closeFicha(); },
+      dlgW: mobile ? '100%' : 'min(880px, calc(100% - 48px))',
+      dlgH: mobile ? '100%' : 'auto',
+      dlgMaxH: mobile ? '100%' : 'min(90vh, 960px)',
+      dlgR: mobile ? '0px' : '4px'
+    };
+  }
+  renderVals() {
+    const s = this.state, wide = s.w >= 1180;
+    const num = this.num();
+    const fmt = num.length >= 12 ? `(${num.slice(2, 4)}) ${num.slice(4, num.length - 4)}-${num.slice(-4)}` : num;
+    const cats = ['Todos', 'Escritório', 'Data center', 'Sala técnica'];
+    const obras = [
+      { t: 'Restauração de piso elevado', cat: 'Escritório', bairro: 'Alphaville, Barueri', span: 3, img: 'assets/obra-restauracao.jpg', big: 'assets/servico-restauracao-2.jpg', alt: 'Restauração de piso elevado em escritório: placas removidas e empilhadas, pedestais à mostra e revestimento antigo sendo substituído' },
+      { t: 'Instalação em sala técnica', cat: 'Sala técnica', bairro: 'Vila Olímpia, SP', span: 2, img: 'assets/obra-sala-tecnica.jpg', big: 'assets/obra-sala-tecnica.jpg', alt: 'Sala técnica com piso elevado recém-instalado em placas cinza-grafite, ainda com marcas de limpeza' },
+      { t: 'Manutenção com operação ativa', cat: 'Data center', bairro: 'Tamboré, Santana de Parnaíba', span: 2, img: 'assets/obra-manutencao-2.jpg', big: 'assets/obra-manutencao-big-2.jpg', alt: 'Data center com placa de piso elevado levantada entre os racks, mostrando eletrocalha com cabeamento azul organizado e pedestais sob o piso' },
+      { t: 'Troca de carpete corporativo', cat: 'Escritório', bairro: 'Faria Lima, SP', span: 2, img: 'assets/obra-carpete.jpg', big: 'assets/obra-carpete.jpg', alt: 'Instalador assentando placas de carpete corporativo em tons de cinza listrado sobre piso elevado' },
+      { t: 'Nivelamento de pedestais', cat: 'Data center', bairro: 'Jundiaí, SP', span: 3, img: 'assets/obra-nivelamento.jpg', big: 'assets/obra-nivelamento.jpg', alt: 'Nivelamento de piso elevado: placa apoiada sobre pedestal regulável, com martelo de borracha e régua de alumínio, e cabeamento passando sob o piso' },
+      { t: 'Piso vinílico sobre placas', cat: 'Escritório', bairro: 'Berrini, SP', span: 2, img: 'assets/obra-vinilico.jpg', big: 'assets/obra-vinilico.jpg', alt: 'Instalador posicionando manta vinílica bege sobre placas de piso elevado aparafusadas' }
+    ].filter(o => s.filter === 'Todos' || o.cat === s.filter).map(o => ({ ...o, img: o.img || '', big: o.big || '', alt: o.alt || '', hasImg: !!o.img, noImg: !o.img, aria: `Ampliar foto: ${o.t}, ${o.cat}`, open: () => this.setState({ lb: { ...o, img: o.img || '', big: o.big || '', alt: o.alt || '', hasImg: !!o.img, noImg: !o.img } }) }));
+    const faqData = [
+      ['Vocês atendem fora do horário comercial?', 'Sim. Em escritórios e data centers em operação, a execução pode ser programada para noites, fins de semana ou janelas de manutenção combinadas com a equipe de facilities.'],
+      ['Fazem só manutenção ou também piso novo?', 'Fazemos os dois: instalação de piso elevado novo, manutenção preventiva e corretiva e restauração de sistemas existentes.'],
+      ['Dá para trocar só algumas placas?', 'Na maioria dos casos, sim. Avaliamos a compatibilidade das placas e pedestais e substituímos apenas o que está danificado.'],
+      ['Trabalham com quais marcas e modelos?', '[Preencher com as marcas e linhas atendidas.] Quando o modelo original saiu de linha, indicamos alternativas compatíveis.'],
+      ['Quanto tempo leva uma visita técnica?', '[Preencher prazo real.] O tempo varia com a metragem; a proposta é enviada por escrito após a visita.'],
+      ['Emitem nota fiscal e relatório?', 'Sim. Toda obra é entregue com nota fiscal e relatório com fotos do antes e depois.'],
+      ['Atendem data centers em operação?', 'Sim. O trabalho é planejado por setores para manter o fluxo de ar e o acesso ao cabeamento durante a execução.'],
+      ['Qual a região de atendimento?', 'São Paulo capital e Grande São Paulo. [Confirmar cidades do interior atendidas.]']
+    ];
+    return {
+      lbImgEl: s.lb && s.lb.big ? React.createElement('img', { src: s.lb.big, alt: s.lb.alt || '', decoding: 'async', style: { display: 'block', width: '100%', height: 'auto', maxHeight: '75vh', objectFit: 'contain', borderRadius: 4, background: '#1B1C1E' } }) : null, lbNoImg: !(s.lb && s.lb.img), lbBig: (s.lb && s.lb.big) || '', lbAlt: (s.lb && s.lb.alt) || '',
+      showClientes: false,
+      ...this.produtoVals(num),
+      showTag: s.w >= 1360,
+      revs: [
+        { t: 'Carpete corporativo', img: 'assets/revestimento-carpete.jpg', foto: 'FOTO · CARPETE EM PLACA SOBRE PISO ELEVADO', alt: 'Carpete em placas cinza-grafite instalado em escritório corporativo, visto rente ao piso',
+          d: 'Absorve ruído de passos e deixa o ambiente mais confortável. Em piso elevado, o formato modular é o mais indicado: cada peça sai sozinha quando é preciso abrir o piso.',
+          formatos: [
+            { k: 'Placa modular', v: 'Normalmente 50 × 50 cm, fixada com cola TAC permanente. Não precisa coincidir com a modulação das placas do piso.' },
+            { k: 'Régua', v: 'Formato retangular para paginações em espinha, escada ou faixas.' },
+            { k: 'Manta (rolo)', v: 'Recortada na modulação de cada placa do piso elevado e fixada de forma permanente.' }
+          ] },
+        { t: 'Piso vinílico', img: 'assets/revestimento-vinilico-2.jpg', foto: 'FOTO · VINÍLICO SOBRE PISO ELEVADO', alt: 'Instalador assentando manta vinílica bege sobre placas metálicas de piso elevado, com os parafusos de fixação aparentes',
+          d: 'Resistente a impacto e abrasão, fácil de limpar e sem necessidade de cera. Disponível em vários padrões, inclusive madeira e pedra.',
+          formatos: [
+            { k: 'Autoportante', v: 'Placa ou régua com fibra de vidro, mais estável. Assenta com cola TAC permanente ou sem cola, conforme o modelo.' },
+            { k: 'Colado (LVT)', v: 'Colado de forma permanente sobre cada placa do piso elevado, que sai junto com o acabamento.' },
+            { k: 'Manta', v: 'Recortada na modulação das placas. Há versões condutivas para salas técnicas e CPDs.' }
+          ] }
+      ].map((r, i) => ({ ...r, img: r.img || '', hasImg: !!r.img, noImg: !r.img, delay: i * 80 })),
+      revTabela: [
+        ['Carpete em placa', 'Cola TAC permanente', 'Retira só a peça do ponto', 'Escritórios, salas de reunião, call centers'],
+        ['Carpete em manta', 'Colagem permanente por placa', 'Sai junto com a placa do piso', 'Grandes áreas contínuas'],
+        ['Vinílico autoportante', 'TAC permanente ou sem cola', 'Retira só a peça do ponto', 'Escritórios e áreas de circulação'],
+        ['Vinílico colado (LVT)', 'Colagem permanente por placa', 'Sai junto com a placa do piso', 'Recepções e áreas de alto tráfego'],
+        ['Vinílico em manta', 'Colagem permanente por placa', 'Sai junto com a placa do piso', 'Salas técnicas, CPDs (versão condutiva)']
+      ].map(([n, fix, acesso, uso], i) => ({ n, fix, acesso, uso, bg: i % 2 ? '#F7F6F3' : '#FFFFFF' })),
+      revEtapas: [
+        ['Avaliação da base', 'Conferimos nível, placas soltas e pedestais antes de aplicar o acabamento.'],
+        ['Correções', 'Regulagem de pedestais e troca de placas danificadas.'],
+        ['Paginação', 'Definimos o sentido das peças e se o revestimento segue ou não a modulação do piso.'],
+        ['Fixação', 'Cola TAC permanente ou colagem definitiva, conforme o revestimento escolhido.'],
+        ['Acabamento e entrega', 'Rodapés, recortes em caixas de tomada e limpeza final.']
+      ].map(([t, d], i) => ({ n: String(i + 1).padStart(2, '0'), t, d })),
+      wide, narrow: !wide, faqPos: s.w >= 1024 ? 'sticky' : 'static', menu: s.menu, menuOpen: s.menu && !wide,
+      toggleMenu: () => this.setState({ menu: !s.menu }), closeMenu: () => this.setState({ menu: false }),
+      headerH: s.scrolled ? '60px' : '68px',
+      parallax: this.rm ? '0px' : `${Math.round(s.y * 0.1)}px`,
+      showGrid: this.props.showGridTexture ?? true,
+      floatOn: (this.props.showFloatingWhats ?? true) && s.float,
+      waLink: `https://wa.me/${num}?text=${encodeURIComponent('Olá! Vim pelo site da ZONN e gostaria de um orçamento.')}`,
+      phoneLabel: fmt,
+      nav: [{ label: 'Produtos', href: '#produtos' }, { label: 'Revestimentos', href: '#revestimentos' }, { label: 'Serviços', href: '#servicos' }, { label: 'Caso', href: '#caso' }, { label: 'Obras', href: '#obras' }, { label: 'Sobre', href: '#sobre' }, { label: 'FAQ', href: '#faq' }],
+      selos: ['Atendimento em SP e Grande SP', 'Execução fora do horário comercial', 'Relatório com fotos'],
+      problemas: [
+        ['01', 'Placas soltas ou batendo', 'Placas que se movem ao pisar indicam pedestal desregulado ou travamento perdido.'],
+        ['02', 'Desnível entre placas', 'Bordas desalinhadas geram tropeços e desgaste acelerado do revestimento.'],
+        ['03', 'Pedestais quebrados', 'Cabeças ou hastes danificadas comprometem a carga que o piso suporta.'],
+        ['04', 'Ruído ao caminhar', 'Estalos e batidas costumam vir de juntas sem amortecimento ou placas fora de esquadro.'],
+        ['05', 'Carpete ou vinílico desgastado', 'Revestimento descolado ou manchado pode ser trocado sem mexer na estrutura.'],
+        ['06', 'Cabeamento sem acesso organizado', 'Placas travadas ou recortes improvisados dificultam a manutenção da infraestrutura.']
+      ].map(([code, t, d], i) => ({ code, t, d, delay: (i % 3) * 80 })),
+      servicos: [
+        { n: '01', t: 'Instalação', img: 'assets/servico-instalacao.jpg', foto: 'FOTO · INSTALAÇÃO 4:3', alt: 'Instalação de piso elevado em escritório: pedestais reguláveis sobre o contrapiso e placas cimentícias sendo assentadas', itens: ['Levantamento de altura e carga do ambiente', 'Locação e nivelamento dos pedestais', 'Placas e acabamento conforme especificação'] },
+        { n: '02', t: 'Manutenção preventiva e corretiva', img: 'assets/servico-manutencao.jpg', foto: 'FOTO · MANUTENÇÃO 4:3', alt: 'Manutenção de piso elevado em granito: placas removidas expondo pedestais e cabeamento sob o piso', itens: ['Troca pontual de placas e pedestais', 'Correção de desnível e ruído', 'Plano de manutenção periódica'] },
+        { n: '03', t: 'Restauração', img: 'assets/servico-restauracao-2.jpg', foto: 'FOTO · RESTAURAÇÃO 4:3', alt: 'Restauração de piso elevado em escritório: placas removidas e empilhadas, pedestais à mostra e revestimento antigo sendo substituído', itens: ['Recuperação de placas e bordas', 'Substituição de revestimento', 'Reaproveitamento da estrutura existente'] }
+      ].map((x, i) => ({ ...x, img: x.img || '', hasImg: !!x.img, noImg: !x.img, delay: i * 80 })),
+      pos: s.pos, posPct: `${s.pos}%`, clipRight: `${100 - s.pos}%`,
+      onPos: e => this.setState({ pos: Number(e.target.value) }),
+      sliderRef: this.sliderRef, sDown: this.sDown, sMove: this.sMove, sUp: this.sUp,
+      sFocus: () => this.setState({ sf: true }), sBlur: () => this.setState({ sf: false }),
+      sliderOutline: s.sf ? '3px solid #F3F2EE' : '0 solid transparent',
+      caso: [
+        { k: 'Desafio', v: '[Descrever em uma frase o problema real encontrado no escritório.]' },
+        { k: 'Solução', v: '[2–3 itens: o que foi feito, como foi planejado, em que horário.]' },
+        { k: 'Resultado', v: '[Resumo do resultado para o cliente.]' }
+      ],
+      metricas: [{ v: 1200, u: 'm²', l: 'de piso atendidos' }, { v: 18, u: 'dias', l: 'de prazo total' }, { v: 0, u: 'dias', l: 'de operação interrompida' }],
+      logos: ['LOGO CLIENTE 01', 'LOGO CLIENTE 02', 'LOGO CLIENTE 03', 'LOGO CLIENTE 04', 'LOGO CLIENTE 05', 'LOGO CLIENTE 06'],
+      depoimentos: [1, 2, 3].map(i => ({ t: '[Depoimento real e autorizado do cliente, com até três linhas sobre o problema e o resultado.]', n: `[Nome do cliente ${i}]`, c: '[Cargo] · [Empresa]', delay: (i - 1) * 80 })),
+      passos: [
+        ['Você envia fotos ou agenda a visita', 'Pelo WhatsApp ou formulário, com uma descrição rápida do ambiente.'],
+        ['Diagnóstico técnico no local', 'Um técnico avalia placas, pedestais, revestimento e acesso ao cabeamento.'],
+        ['Proposta detalhada com prazo', 'Escopo, materiais, cronograma e janela de execução por escrito.'],
+        ['Execução e entrega com relatório', 'Obra limpa, conferência final e relatório com fotos.']
+      ].map(([t, d], i) => ({ n: i + 1, t, d, delay: i * 80, bg: i === 0 ? '#F2B01E' : 'transparent' })),
+      chips: cats.map(c => { const a = s.filter === c; return { label: c, active: a, bg: a ? '#1B1C1E' : '#FFFFFF', fg: a ? '#F3F2EE' : '#55575B', border: a ? '#1B1C1E' : '#D3D1CB', on: () => this.setState({ filter: c }) }; }),
+      obras,
+      lb: s.lb || {}, lbOpen: !!s.lb, closeLb: e => { if (e.target === e.currentTarget || e.currentTarget.tagName === 'BUTTON') this.setState({ lb: null }); },
+      difs: [
+        ['01', 'Equipe própria', 'Os mesmos técnicos do diagnóstico à entrega, sem subcontratação.'],
+        ['02', 'Foco em ambientes corporativos e técnicos', 'Escritórios, data centers e salas técnicas são o nosso dia a dia.'],
+        ['03', 'Prazo e obra limpa', 'Cronograma cumprido e ambiente entregue pronto para uso.']
+      ].map(([n, t, d], i) => ({ n, t, d, delay: i * 80 })),
+      argumentos: ['Visita técnica com diagnóstico', 'Proposta por escrito com prazo', 'Execução fora do horário comercial'],
+      fb: ['nome', 'whats', 'email', 'ambiente', 'servico'].reduce((o, k) => (o[k] = s.errors[k] ? '#B3261E' : '#8C8A84', o), {}),
+      er: ['nome', 'whats', 'email', 'ambiente', 'servico'].reduce((o, k) => (o[k] = s.errors[k] || '', o), {}),
+      inv: ['nome', 'whats', 'email', 'ambiente', 'servico'].reduce((o, k) => (o[k] = !!s.errors[k], o), {}),
+      submit: this.submit, sent: s.sent, waUrl: s.waUrl,
+      submitLabel: s.sending ? 'Abrindo WhatsApp…' : 'Enviar pelo WhatsApp',
+      faq: faqData.map(([q, a], i) => { const open = s.faq === i; return { q, a, open, bid: `faq-b${i}`, pid: `faq-p${i}`, rows: open ? '1fr' : '0fr', rot: open ? '45deg' : '0deg', iconBg: open ? '#F2B01E' : 'transparent', toggle: () => this.setState({ faq: open ? -1 : i }) }; }),
+      sociais: [{ l: 'Instagram', s: 'IG' }, { l: 'LinkedIn', s: 'in' }, { l: 'YouTube', s: 'YT' }]
+    };
+  }
+}
+</script>
+</body>
+</html>
